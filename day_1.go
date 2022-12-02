@@ -27,14 +27,17 @@ func main() {
 				log.Println(err)
 			}
 			elfs[elfCount] = append(elfs[elfCount], num)
-			fmt.Println(elfs[elfCount])
 		} else {
 			calories = append(calories, sum(elfs[elfCount]))
 			elfCount++
 		}
 	}
 	sort.Ints(calories)
+	// part 1
 	fmt.Println(calories[len(calories)-1])
+	// part 2
+	fmt.Println(sum(calories[len(calories)-3:]))
+
 }
 
 func sum(items []int) int {
