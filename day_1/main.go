@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("fixtures/day_1.txt")
+	f, err := os.Open("data.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
