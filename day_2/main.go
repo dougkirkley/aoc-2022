@@ -77,7 +77,7 @@ func (r Round) Result() int {
 }
 
 func main() {
-	f, err := os.Open("test.txt")
+	f, err := os.Open("data.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
